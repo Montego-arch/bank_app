@@ -16,6 +16,7 @@
   "account_status",
   "bvn",
   "account_manager",
+  "manager_name",
   "section_break_dqua2",
   "financial_services"
  ],
@@ -85,11 +86,19 @@
    "label": "Account Status",
    "options": "\nSavings\nCurrent\nDomiciliary",
    "reqd": 1
+  },
+  {
+   "depends_on": "account_manager",
+   "fetch_from": "account_manager.manager_name",
+   "fetch_if_empty": 1,
+   "fieldname": "manager_name",
+   "fieldtype": "Read Only",
+   "label": "Manager Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-19 12:41:22.946456",
+ "modified": "2023-10-19 15:58:21.537269",
  "modified_by": "Administrator",
  "module": "Apex Bank App",
  "name": "Apex",

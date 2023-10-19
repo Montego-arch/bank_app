@@ -1,15 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:manager_name",
+ "autoname": "format:AM-AP-{YY}-{MM}-{####}",
  "creation": "2023-10-19 11:34:27.964889",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "manager_name",
-  "phone",
   "email",
+  "phone",
   "image"
  ],
  "fields": [
@@ -29,7 +29,9 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
+   "in_filter": 1,
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Email",
    "reqd": 1
   },
@@ -41,7 +43,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-19 11:34:27.964889",
+ "modified": "2023-10-19 15:20:24.781631",
  "modified_by": "Administrator",
  "module": "Apex Bank App",
  "name": "Account Manager",
