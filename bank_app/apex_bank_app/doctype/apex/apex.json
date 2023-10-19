@@ -7,7 +7,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "customer_name"
+  "customer_name",
+  "address",
+  "image",
+  "apex_type",
+  "section_break_v5z5z",
+  "account_number",
+  "account_status",
+  "bvn",
+  "account_manager",
+  "section_break_dqua2",
+  "financial_services"
  ],
  "fields": [
   {
@@ -16,11 +26,70 @@
    "in_list_view": 1,
    "label": "Customer Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_manager",
+   "fieldtype": "Link",
+   "label": "Account Manager",
+   "options": "Account Manager"
+  },
+  {
+   "fieldname": "section_break_v5z5z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bvn",
+   "fieldtype": "Data",
+   "label": "BVN"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_dqua2",
+   "fieldtype": "Section Break",
+   "label": "Service Section"
+  },
+  {
+   "fieldname": "financial_services",
+   "fieldtype": "Table",
+   "label": "Financial Services",
+   "options": "Apex Service Details"
+  },
+  {
+   "fieldname": "apex_type",
+   "fieldtype": "Link",
+   "label": "Apex Type",
+   "options": "Apex Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account_status",
+   "fieldtype": "Select",
+   "label": "Account Status",
+   "options": "\nSavings\nCurrent\nDomiciliary",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-19 11:23:01.359933",
+ "modified": "2023-10-19 12:41:22.946456",
  "modified_by": "Administrator",
  "module": "Apex Bank App",
  "name": "Apex",
