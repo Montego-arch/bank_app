@@ -7,19 +7,30 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "service"
+  "service",
+  "service_charge"
  ],
  "fields": [
   {
    "fieldname": "service",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Service",
+   "reqd": 1,
    "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "service_charge",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Service Charge",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-19 12:04:38.765908",
+ "modified": "2023-10-20 10:41:05.152249",
  "modified_by": "Administrator",
  "module": "Apex Bank App",
  "name": "Apex Financial Service",
