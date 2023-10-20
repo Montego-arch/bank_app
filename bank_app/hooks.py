@@ -95,13 +95,18 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+	"Apex": {
+        "validate": "bank_app.apex_bank_app.doctype.apex.events.validate",
+        "on_update": "bank_app.apex_bank_app.doctype.apex.events.on_update",
+        "after_insert": "bank_app.apex_bank_app.doctype.apex.events.after_insert",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
