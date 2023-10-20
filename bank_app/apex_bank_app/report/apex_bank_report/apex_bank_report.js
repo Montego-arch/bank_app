@@ -5,7 +5,7 @@
 frappe.query_reports["Apex Bank Report"] = {
 	"filters": [
 		{
-			"fieldname": "apex",
+			"fieldname": "name",
 			"label":__("Apex Name"),
 			"fieldtype": "Data",
 			"width": 100,
