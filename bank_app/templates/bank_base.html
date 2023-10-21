@@ -1,10 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Banker &mdash; Website Template by Colorlib</title>
+    <title>{% block title %}{% endblock %} - Apex Bank</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
     
+    <link
+		rel="shortcut icon"
+		href="/assets/erpnext/images/erpnext-favicon.svg"
+		type="image/x-icon"
+	>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="/assets/bank_app/banker/fonts/icomoon/style.css">
 
@@ -54,14 +60,14 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Banker<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="/" class="h2 mb-0"><strong>Apex<span class="text-primary"></span></strong></a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="/" class="nav-link">Home</a></li>
                 <li class="has-children">
                   <a href="#about-section" class="nav-link">About Us</a>
                   <ul class="dropdown">
