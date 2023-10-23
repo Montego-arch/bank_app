@@ -46,7 +46,7 @@ frappe.ui.form.on('Apex', {
 		}
 	},
 	refresh: function(frm) {
-		frm.add_custom_button('Say Hi', () => {
+		frm.add_custom_button('', () => {
 			frappe.prompt('Address', ({ value }) => {
 				if(value){
 					frm.set_value('address', value);
